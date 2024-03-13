@@ -11,18 +11,16 @@ const Wrapper = styled.div`
     width: calc(100% - 32px);
     display: flex;
     flex-direction: column;
-    align-items: column;
+    align-items: center;
     justify-content: center;
 `;
 
 const Container = styled.div`
     width: 100%;
     max-width: 720px;
-    
-    & > * {
-        :not(:last-child) {
-            margin-bottom: 16px;
-        }
+
+    :not(:last-child) {
+        margin-bottom: 16px;
     }
 `;
 
@@ -56,15 +54,15 @@ function PostViewPage(props) {
         return item.id == postId;
     });
 
-    const [comment, setComment] = useState("");
+    const [comment, setComment] = useState('');
 
     return (
         <Wrapper>
             <Container>
                 <Button
-                    title="뒤로 가기"
+                    title='뒤로 가기'
                     onClick={() => {
-                        navigate("/");
+                        navigate('/');
                     }}
                 />
                 <PostContainer>
@@ -83,9 +81,9 @@ function PostViewPage(props) {
                     }}
                 />
                 <Button
-                    title="댓글 작성하기"
+                    title='댓글 작성하기'
                     onClick={() => {
-                        navigate("/");
+                        navigate('/');
                     }}
                 />
             </Container>

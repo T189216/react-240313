@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 const Wrapper = styled.div`
     width: calc(100% - 32px);
@@ -19,7 +19,7 @@ const Wrapper = styled.div`
 
 const TitleText = styled.p`
     font-size: 20px;
-    font-weight: 500;    
+    font-weight: 500;
 `;
 
 function PostListItem(props) {
