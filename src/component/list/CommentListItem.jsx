@@ -17,19 +17,18 @@ const Wrapper = styled.div`
     }
 `;
 
-const TitleText = styled.p`
-    font-size: 20px;
-    font-weight: 500;    
+const ContentText = styled.p`
+    font-size: 14px;
 `;
 
-function PostListItem(props) {
-    const { post, onClick } = props;
+function CommentListItem(props) {
+    const { comment } = props;
 
     return (
-        <Wrapper onClick={onClick}>
-            <TitleText>{post.title}</TitleText>
+        <Wrapper>
+            <ContentText>{comment.content}</ContentText>
         </Wrapper>
     );
 }
 
-export default PostListItem;
+export default CommentListItem;
